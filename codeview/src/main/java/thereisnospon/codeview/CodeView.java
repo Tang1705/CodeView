@@ -76,11 +76,12 @@ public class CodeView extends WebView {
         showCodeHtml(elements);
         loadDataWithBaseURL(baseUrl, document.html(), "text/html", encode, historyUrl);
     }
+//         document.head().append("\n<script>hljs.initHighlightingOnLoad();</script>\n");
 
     private void documentInit(String localHtml) {
         this.document = Jsoup.parse(localHtml);
-        document.head().append("\n<script src=\"file:///android_asset/highlight/highlight.pack.js\"></script>\n");
-        document.head().append("\n<script>hljs.initHighlightingOnLoad();</script>\n");
+        document.head().append("\n<script src=\"file:///android_asset/prism/prism.js\"></script>\n");
+
         document.head().append(createStyle());
     }
 
@@ -107,8 +108,9 @@ public class CodeView extends WebView {
         return Color.parseColor(theme.getBackgroundColor());
     }
 
+// theme.getName()
     private String createStyle() {
-        return "<link rel=\"stylesheet\" href=\"file:///android_asset/highlight/styles/" + theme.getName() + ".css\"/>";
+        return "<link rel=\"stylesheet\" href=\"file:///android_asset/prism/prism.css\"/>";
     }
 
     private void addCode(Code code) {
@@ -119,7 +121,7 @@ public class CodeView extends WebView {
             "<!DOCTYPE html>\n" +
                     "<html>\n" +
                     "<head>\n" +
-                    "\t<script src=\"file:///android_asset/highlight/highlight.pack.js\"></script>\n" +
+                    "\t<script src=\"file:///android_asset/prism.js\"></script>\n" +
                     "\t<script>hljs.initHighlightingOnLoad();</script>\n" +
                     "\t<title></title>\n" +
                     "</head>\n" +
