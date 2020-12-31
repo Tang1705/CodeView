@@ -20,12 +20,12 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 
 .hljs-comment,
 .hljs-quote {
-  color: #808080;
+  color: #8C8C8C;
   font-style: italic;
 }
 
 .hljs-meta {
-  color: #808000;
+  color: #8C8C8C;
 }
 
 .hljs-tag {
@@ -41,7 +41,7 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-selector-id,
 .hljs-selector-class {
   font-weight: bold;
-  color: #000080;
+  color: #1750EB;
 }
 
 .hljs-attribute,
@@ -49,7 +49,7 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-regexp,
 .hljs-link {
   font-weight: bold;
-  color: #0000ff;
+  color: #1750EB;
 }
 
 .hljs-number,
@@ -59,7 +59,7 @@ Intellij Idea-like styling (c) Vasily Polovnyov <vast@whiteants.net>
 }
 
 .hljs-string {
-  color: #008000;
+  color: #067D17;
   font-weight: bold;
 }
 
